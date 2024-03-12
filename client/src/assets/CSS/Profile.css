@@ -1,0 +1,57 @@
+.update {
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  form.update input {
+    width: 290px;
+  }
+  
+  form.update button.cancel,
+  form.update button.sign {
+    width: 140px; /* Adjust the width as needed */
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .update {
+      width: 100%;
+    }
+  
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .profile-container{
+    background-color: rgb(143, 180, 180);
+    height: 400px;
+    width: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    
+  }
+  
+  .profile-picture{
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    margin-top: 0;
+  }
