@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+
+/* .logo{
+  max
+  margin:0;  
+} */
+*{
+  margin: 0;
+  padding: 0;
+
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  height: 50px;
+}
+.App ul{
+  align-content: space-between;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-left: 300px;
+  gap: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sticky-nav ul li{
+  cursor: pointer;
+}
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Set the background color as needed */
+  z-index: 100; /* Set the z-index to ensure it appears above other elements */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Add other styles as needed */
+.select-card{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select-container{
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  height: 90px;
+  width: 200px;
   display: flex;
   flex-direction: column;
+}
+.select-container select{
+  margin-top:20px;
+  height: 30px;
+  width: 100%;
+}
+.select-container button{
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 30px;
+  width: 100%;
+  background-color: rgb(37, 158, 206);
+  border: none;
   color: white;
-}
+  font-size: 20px;
 
-.App-link {
-  color: #61dafb;
 }
+#category{
+  display: flex;
+  flex-direction: column;
+  background-color:#6eb5ff;
+}
+#city{
+  background-color:#76D7D6;
+}
+#level{
+  background-color:#ffb347;
+}
+#btn{
+  background-color:#9fb9bf;
+  justify-content: center;
+}
+.courses{
+display: flex;
+flex-direction: row;
+gap: 20px;
+justify-content: center;
+padding: 20px;
+}
+.card{
+  height: 300px;
+  width: 280px;
+  background-color: #fcffff;
+  border-radius: 10px;
+  border:solid black 1px;
+  padding: 15px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+.card img{
+  height: 50%;
+  width: 100%;
+
+}
+.card a{
+  color: rgb(28, 156, 156);
+  margin-bottom: 10px;
 }
